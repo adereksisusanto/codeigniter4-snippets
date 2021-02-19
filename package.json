@@ -1,0 +1,33 @@
+{
+  "name": "codeigniter4-snippets",
+  "displayName": "CodeIgniter4 Snippets",
+  "description": "CodeIgniter4 Snippets for Visual Studio Code",
+  "publisher": "adereksisusanto",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.53.0"
+  },
+  "keywords": [
+    "codeigniter4",
+    "snippets",
+    "php"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adereksisusanto/codeigniter4-snippets.git"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "php",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "vsce package -o adereksisusanto.codeigniter4-snippets-$npm_package_version.vsix"
+  }
+}
