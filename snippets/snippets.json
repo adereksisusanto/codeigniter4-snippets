@@ -1,1 +1,17 @@
-{}
+{
+  "php": {
+    "prefix": "php",
+    "body": ["<?php $1 ;?>$2"],
+    "description": "Php"
+  },
+  "phpp": {
+    "prefix": "phpp",
+    "body": ["<?= $1 ;?>$2"],
+    "description": "Php Echo"
+  },
+  "section": {
+    "prefix": "section",
+    "body": ["<?= $$this->section('$1') ;?>$2"],
+    "description": "Section"
+  }
+}
