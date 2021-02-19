@@ -28,5 +28,20 @@
       "$3"
     ],
     "description": "CodeIgniter 4 - section endSection"
+  },
+  "Codeigniter4_EXTEND": {
+    "prefix": "ci4_extend",
+    "body": ["<?= $$this->extend('$1') ;?>$2"],
+    "description": "CodeIgniter 4 - extend"
+  },
+  "Codeigniter4_INCLUDE": {
+    "prefix": "ci4_include",
+    "body": ["<?= $$this->include('$1') ;?>$2"],
+    "description": "CodeIgniter 4 - include"
+  },
+  "Codeigniter4_RENDERSECTION": {
+    "prefix": "ci4_rendersection",
+    "body": ["<?= $$this->renderSection('$1') ;?>$2"],
+    "description": "CodeIgniter 4 - renderSection"
   }
 }
