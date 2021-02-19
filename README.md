@@ -28,14 +28,6 @@ ext install codeigniter4-snippets
 | ci4_endsection | Make <b>endSection</b>         | `<?= $this->endSection() ;?>`                                                                  |
 | ci4_sectionend | Make <b>section endSection</b> | `<?= $this->section('code_here') ;?>`<br>`<!-- CODE HERE -->`<br>`<?= $this->endSection() ;?>` |
 
-## Contributing
-
-1. Fork it (<https://github.com/adereksisusanto/codeigniter4-snippets/fork>)
-2. Create your feature branch (`git checkout -b my-new-snippet`)
-3. Commit your changes (`git commit -am 'Add some snippet'`)
-4. Push to the branch (`git push origin my-new-snippet`)
-5. Create a new Pull Request
-
 Happy coding!
 
 ## License
