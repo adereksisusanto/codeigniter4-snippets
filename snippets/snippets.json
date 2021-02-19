@@ -1,17 +1,32 @@
 {
-  "php": {
-    "prefix": "php",
+  "Codeigniter4_PHP": {
+    "prefix": "ci4_php",
     "body": ["<?php $1 ;?>$2"],
-    "description": "Php"
+    "description": "CodeIgniter 4 - php"
   },
-  "phpp": {
-    "prefix": "phpp",
+  "Codeigniter4_PHP_ECHO": {
+    "prefix": "ci4_php_echo",
     "body": ["<?= $1 ;?>$2"],
-    "description": "Php Echo"
+    "description": "CodeIgniter 4 - php echo"
   },
-  "section": {
-    "prefix": "section",
+  "Codeigniter4_SECTION": {
+    "prefix": "ci4_section",
     "body": ["<?= $$this->section('$1') ;?>$2"],
-    "description": "Section"
+    "description": "CodeIgniter 4 - section"
+  },
+  "Codeigniter4_ENDSECTION": {
+    "prefix": "ci4_endsection",
+    "body": ["<?= $$this->endSection() ;?>$1"],
+    "description": "CodeIgniter 4 - endSection"
+  },
+  "Codeigniter4_SECTION_ENDSECTION": {
+    "prefix": "ci4_sectionend",
+    "body": [
+      "<?= $$this->section('$1') ;?>",
+      "<!-- CODE HERE -->$2",
+      "<?= $$this->endSection() ;?>",
+      "$3"
+    ],
+    "description": "CodeIgniter 4 - section endSection"
   }
 }
