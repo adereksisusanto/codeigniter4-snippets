@@ -1,65 +1,63 @@
-# codeigniter4-snippets
+# Codeigniter 4 Snippets for Vscode
 
-This is the README for your extension "codeigniter4-snippets". After writing up a brief description, we recommend including the following sections.
+This Extensions provides the Codeigniter 4 Snippets snippets
 
-## Features
+## Install
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Launch Code's command palette
 
-For example if there is an image subfolder under your extension project workspace:
+```bash
+ext install codeigniter4-snippets
+```
 
-\!\[feature X\]\(images/feature-x.png\)
+## Avaiable snippets
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+| Command                   | Description                                                |
+| ------------------------- | ---------------------------------------------------------- |
+| ci_model                  | Model namespace                                            |
+| ci_controller             | Controller namespace                                       |
+| ci_load_helper            | Load helper sintax                                         |
+| ci_view                   | Echo CI view                                               |
+| ci_new_renderer           | New View Renderer                                          |
+| ci_render_section =ci_log | Logging information> Render section view                   |
+| ci_extend_layout          | Extend layout (insert view into a layout)                  |
+| ci_view_section           | View section (content within a view that extends a layout) |
+| ci_view_include           | View include                                               |
+| ci_get_locale             | Get Locale                                                 |
+| load_database             | Load the Database                                          |
+| ci_db_query               | Query                                                      |
+| ci_query_result           | Get the query result as object                             |
+| ci_query_result_array     | Get the query result as array                              |
+| ci_query_row              | Get the query result as row (object)                       |
+| ci_query_row_array        | Get the query result as row (array)                        |
+| ci_addroute               | Add Route                                                  |
+| ci_addrouteclosure        | Add Route With Closure                                     |
+| ci_anchor                 | Anchor Link                                                |
+| ci_getCookie              | Return any data from $\_COOKIE                             |
+| ci_getGet                 | Return any data from $\_GET                                |
+| ci_getPost                | Return any data from $\_POST                               |
+| ci_getServer              | Return any data from $\_SERVER                             |
+| ci_getVar                 | Return any data from $\_GET, $POST, or $\_COOKIE           |
+| ci_isajax                 | Check if request is ajax                                   |
+| ci_iscli                  | Check if request is CLI                                    |
+| ci_issecure               | Check if request is HTTPS                                  |
+| ci_log                    | Logging information                                        |
+| ci_filter                 | Create a new filter class                                  |
+| ci_db_conn                | Create a new database connection                           |
+| ci4_user_agent            | Initializing user Agent the Class                          |
+| ci4_email                 | Sending Email                                              |
+| ci4_curl                  | Making HTTP Requests                                       |
 
-## Requirements
+## Contributing
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Fork it (<https://github.com/adereksisusanto/codeigniter4-snippets/fork>)
+2. Create your feature branch (`git checkout -b my-new-snippet`)
+3. Commit your changes (`git commit -am 'Add some snippet'`)
+4. Push to the branch (`git push origin my-new-snippet`)
+5. Create a new Pull Request
 
-## Extension Settings
+Happy coding!
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## License
 
-For example:
-
-This extension contributes the following settings:
-
-- `myExtension.enable`: enable/disable this extension
-- `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-- Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-- Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+[![GitHub license](https://img.shields.io/github/license/adereksisusanto/codeigniter4-snippets.svg)](https://github.com/adereksisusanto/codeigniter4-snippets)
