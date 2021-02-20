@@ -4,7 +4,7 @@
   "description": "CodeIgniter4 Snippets for Visual Studio Code",
   "icon": "ci4.png",
   "publisher": "adereksisusanto",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.53.0"
   },
@@ -24,7 +24,11 @@
     "snippets": [
       {
         "language": "php",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/php.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
       }
     ]
   }
