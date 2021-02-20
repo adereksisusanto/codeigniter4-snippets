@@ -1,0 +1,93 @@
+{
+  "Codeigniter4_ROUTES_ADD": {
+    "prefix": "ci4_routes_add",
+    "body": ["\\$routes->add('${1:url}','${2:ControllerName}::${3:index}');$0"],
+    "description": "CodeIgniter 4 - routes add"
+  },
+  "Codeigniter4_ROUTES_CLI": {
+    "prefix": "ci4_routes_cli",
+    "body": [
+      "\\$routes->cli('${1:migrate}','${2:App\\\\Database}::${3:migrate}');$0"
+    ],
+    "description": "CodeIgniter 4 - Command-Line only Routes"
+  },
+  "Codeigniter4_ROUTES_ENVIRONMENT": {
+    "prefix": "ci4_routes_env",
+    "body": [
+      "\\$routes->environment('${1:development}', function(\\$routes)",
+      "{",
+      "\t\\$routes->add('${2:builder}','${3:Tools\\\\Builder}::${4:index}');",
+      "});$0"
+    ],
+    "description": "CodeIgniter 4 - routes environment"
+  },
+  "Codeigniter4_ROUTES_GET": {
+    "prefix": "ci4_routes_get",
+    "body": ["\\$routes->get('${1:url}','${2:ControllerName}::${3:index}');$0"],
+    "description": "CodeIgniter 4 - routes get"
+  },
+  "Codeigniter4_ROUTES_GROUP": {
+    "prefix": "ci4_routes_group",
+    "body": [
+      "\\$routes->group('${1:admin}', function(\\$routes)",
+      "{",
+      "\t\\$routes->add('${2:url}','${3:ControllerName}::${4:index}');",
+      "});$0"
+    ],
+    "description": "CodeIgniter 4 - routes group"
+  },
+  "Codeigniter4_ROUTES_GROUP_FILTER": {
+    "prefix": "ci4_routes_group_filter",
+    "body": [
+      "\\$routes->group('${1:api}',['filter' => '${2:api-auth}'], function(\\$routes)",
+      "{",
+      "\t\\$routes->resource('${3:url}');",
+      "});$0"
+    ],
+    "description": "CodeIgniter 4 - routes group filter"
+  },
+  "Codeigniter4_ROUTES_GROUP_MULTIPLE": {
+    "prefix": "ci4_routes_group_multiple",
+    "body": [
+      "\\$routes->group('${1:admin}', function(\\$routes)",
+      "{",
+      "\t\\$routes->group('${2:users}', function(\\$routes)",
+      "\t{",
+      "\t\t\\$routes->add('${3:list}','${4:Admin\\\\Users}::${5:list}');",
+      "\t});",
+      "});$0"
+    ],
+    "description": "CodeIgniter 4 - routes group multiple"
+  },
+  "Codeigniter4_ROUTES_GROUP_NAMESPACE": {
+    "prefix": "ci4_routes_group_namespace",
+    "body": [
+      "\\$routes->group('${1:api}',['namespace' => '${2:App\\\\API\\\\v1}'], function(\\$routes)",
+      "{",
+      "\t\\$routes->resource('${3:url}');",
+      "});$0"
+    ],
+    "description": "CodeIgniter 4 - routes group namespace"
+  },
+  "Codeigniter4_ROUTES_POST": {
+    "prefix": "ci4_routes_post",
+    "body": [
+      "\\$routes->post('${1:url}','${2:ControllerName}::${3:index}');$0"
+    ],
+    "description": "CodeIgniter 4 - routes post"
+  },
+  "Codeigniter4_ROUTES_SUBDOMAIN": {
+    "prefix": "ci4_routes_subdomain",
+    "body": [
+      "\\$routes->add('${1:from}', '${2:to}', ['subdomain' => '${2:*}']);$0"
+    ],
+    "description": "CodeIgniter 4 - Routes Limit to Subdomains"
+  },
+  "Codeigniter4_ROUTES_VERBS": {
+    "prefix": "ci4_routes_verbs",
+    "body": [
+      "\\$routes->${1:get}('${2:product}','${3:Product}::${4:feature}');$0"
+    ],
+    "description": "CodeIgniter 4 - HTTP verbs in routes, HTTP verb (GET, POST, PUT, DELETE, etc)"
+  }
+}

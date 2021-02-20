@@ -1,0 +1,47 @@
+{
+  "Codeigniter4_ENDSECTION": {
+    "prefix": "ci4_endsection",
+    "body": ["<?= \\$this->endSection() ;?>$0"],
+    "description": "CodeIgniter 4 - endSection"
+  },
+  "Codeigniter4_EXTEND": {
+    "prefix": "ci4_extend",
+    "body": ["<?= \\$this->extend('${1:layouts}') ;?>$0"],
+    "description": "CodeIgniter 4 - extend"
+  },
+  "Codeigniter4_INCLUDE": {
+    "prefix": "ci4_include",
+    "body": ["<?= \\$this->include('${1:filename}') ;?>$0"],
+    "description": "CodeIgniter 4 - include"
+  },
+  "Codeigniter4_PHP": {
+    "prefix": "ci4_php",
+    "body": ["<?php ${1:text} ;?>$0"],
+    "description": "CodeIgniter 4 - php"
+  },
+  "Codeigniter4_PHP_ECHO": {
+    "prefix": "ci4_php_echo",
+    "body": ["<?= ${1:text} ;?>$0"],
+    "description": "CodeIgniter 4 - php echo"
+  },
+  "Codeigniter4_RENDERSECTION": {
+    "prefix": "ci4_rendersection",
+    "body": ["<?= \\$this->renderSection('${1:content}') ;?>$0"],
+    "description": "CodeIgniter 4 - renderSection"
+  },
+  "Codeigniter4_SECTION": {
+    "prefix": "ci4_section",
+    "body": ["<?= \\$this->section('${1:content}') ;?>$0"],
+    "description": "CodeIgniter 4 - section"
+  },
+  "Codeigniter4_SECTION_ENDSECTION": {
+    "prefix": "ci4_sectionend",
+    "body": [
+      "<?= \\$this->section('${1:content}') ;?>",
+      "${1:<!-- CODE HERE -->}",
+      "<?= \\$this->endSection() ;?>",
+      "$0"
+    ],
+    "description": "CodeIgniter 4 - section endSection"
+  }
+}
