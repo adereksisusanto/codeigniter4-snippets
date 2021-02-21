@@ -16,9 +16,9 @@ Launch Code's command palette
 ext install adereksisusanto.codeigniter4-snippets
 ```
 
-## Avaiable snippets
+### Alternate Snippets for Routes
 
-### `app/Config/Routes.php`
+### `[ProjectRoot]/app/Config/Routes.php`
 
 <table>
 <thead>
@@ -30,8 +30,8 @@ ext install adereksisusanto.codeigniter4-snippets
 </thead>
 <tbody>
 <tr>
-<td>ci4_routes_add</td>
-<td>Make <b>routes add</b></td>
+<td nowrap>ci4:routes:add</td>
+<td>Make Routes add() </td>
 <td>
 
 ```php
@@ -40,9 +40,10 @@ $routes->add('url', 'ControllerName::index');
 
 </td>
 </tr>
+<!--  -->
 <tr>
-<td>ci4_routes_cli</td>
-<td>Make <b>Command-Line only Routes</b></td>
+<td nowrap>ci4:routes:cli</td>
+<td>Make Command-Line only Routes</td>
 <td>
 
 ```php
@@ -51,9 +52,10 @@ $routes->cli('migrate', 'App\Database::migrate');
 
 </td>
 </tr>
+<!--  -->
 <tr>
-<td>ci4_routes_env</td>
-<td>Make <b>routes environment</b></td>
+<td nowrap>ci4:routes:env</td>
+<td>Make Routes Environment</td>
 <td>
 
 ```php
@@ -65,119 +67,22 @@ $routes->environment('development' , function($routes)
 
 </td>
 </tr>
+<!--  -->
 <tr>
-<td>ci4_routes_get</td>
-<td>Make <b>routes get</b></td>
-<td>
+<td colspan="3" align="center">
 
-```php
-$routes->get('url', 'ControllerName::index');
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_group</td>
-<td>Make <b>routes group</b></td>
-<td>
-
-```php
-$routes->group('admin', function($routes)
-{
-    $routes->add('url','ControllerName::index');
-});
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_group_filter</td>
-<td>Make <b>routes group filter</b></td>
-<td>
-
-```php
-$routes->group('api' , ['filter' => 'api-auth'], function($routes)
-{
-    $routes->resource('url');
-});
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_group_multiple</td>
-<td>Make <b>routes group multiple</b></td>
-<td>
-
-```php
-$routes->group('admin', function($routes)
-{
-    $routes->group('users', function($routes)
-    {
-        $routes->add('list','Admin\Users::list');
-    });
-});
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_group_namespace</td>
-<td>Make <b>routes group namespace</b></td>
-<td>
-
-```php
-$routes->group('api' , ['namespace' => 'App\API\v1'], function($routes)
-{
-    $routes->resource('url');
-});
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_post</td>
-<td>Make <b>routes post</b></td>
-<td>
-
-```php
-$routes->post('url', 'ControllerName::index');
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_subdomain</td>
-<td>Make <b>Routes Limit to Subdomains</b></td>
-<td>
-
-```php
-$routes->add('from', 'to', ['subdomain' => '*']);
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_verbs</td>
-<td>HTTP verbs in routes, HTTP verb (<b>GET, POST, PUT, DELETE, etc</b>)</td>
-<td>
-
-```php
-$routes->get('products', 'Product::feature');
-or
-$routes->post('products', 'Product::feature');
-or
-$routes->put('products/(:num)', 'Product::feature');
-or
-$routes->delete('products/(:num)', 'Product::feature');
-```
+[More..](https://github.com/adereksisusanto/codeigniter4-snippets/docs/ROUTES.md)
 
 </td>
 </tr>
 </tbody>
 </table>
 
-### `app/Views/....php`
+---
+
+### Alternate Snippets for View Files
+
+### `[ProjectRoot]/app/Views/**.php`
 
 <table>
 <thead>
@@ -189,8 +94,8 @@ $routes->delete('products/(:num)', 'Product::feature');
 </thead>
 <tbody>
 <tr>
-<td>ci4_endsection</td>
-<td>Make <b>endSection</b></td>
+<td nowrap>ci4:views:endSection</td>
+<td>Make end Section in View files</td>
 <td>
 
 ```php
@@ -199,9 +104,10 @@ $routes->delete('products/(:num)', 'Product::feature');
 
 </td>
 </tr>
+<!--  -->
 <tr>
-<td>ci4_extend</td>
-<td>Make <b>extend</b></td>
+<td nowrap>ci4:views:extend</td>
+<td>Using Layouts in Views</td>
 <td>
 
 ```php
@@ -210,70 +116,23 @@ $routes->delete('products/(:num)', 'Product::feature');
 
 </td>
 </tr>
+<!--  -->
 <tr>
-<td>ci4_include</td>
-<td>Make <b>include</b></td>
+<td nowrap>ci4:views:include</td>
+<td>Including View Partials</td>
 <td>
 
 ```php
-<?= $this->include('filename') ;?>
+<?= $this->include('sidebar') ;?>
 ```
 
 </td>
 </tr>
+<!--  -->
 <tr>
-<td>ci4_php</td>
-<td>Make <b>php</b></td>
-<td>
+<td colspan="3" align="center">
 
-```php
-<?php text ;?>
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_php_echo</td>
-<td>Make <b>php echo</b></td>
-<td>
-
-```php
-<?= text ;?>
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_rendersection</td>
-<td>Make <b>renderSection</b></td>
-<td>
-
-```php
-<?= $this->renderSection('content') ;?>
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_section</td>
-<td>Make <b>section</b></td>
-<td>
-
-```php
-<?= $this->section('content') ;?>
-```
-
-</td>
-<tr>
-<td>ci4_sectionend</td>
-<td>Make <b>section endSection</b></td>
-<td>
-
-```php
-<?= $this->section('content') ;?>
-<!-- CODE HERE -->
-<?= $this->endSection() ;?>
-```
+[More..](https://github.com/adereksisusanto/codeigniter4-snippets/docs/VIEWS.md)
 
 </td>
 </tr>

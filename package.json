@@ -4,14 +4,15 @@
   "description": "CodeIgniter4 Snippets for Visual Studio Code",
   "icon": "ci4.png",
   "publisher": "adereksisusanto",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.53.0"
   },
   "keywords": [
     "codeigniter4",
     "snippets",
-    "php"
+    "php",
+    "html"
   ],
   "repository": {
     "type": "git",

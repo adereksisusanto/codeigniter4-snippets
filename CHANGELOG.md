@@ -2,169 +2,105 @@
 
 All notable changes to the "codeigniter4-snippets" extension will be documented in this file.
 
-Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.3) for recommendations on how to structure this file.
+Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.4) for recommendations on how to structure this file.
 
-## [Released - 0.0.3]
+## [Released - 0.0.4]
 
-- #### Fixed Bugs
-- #### Add Snippets
+- #### Fixed Bugs.
+- #### Change Command ( [read](https://github.com/adereksisusanto/codeigniter4-snippets/docs/CHANGE.md) ).
+- #### Add Docs.
+  - ##### [Routes](https://github.com/adereksisusanto/codeigniter4-snippets/docs/ROUTES.md)
+  - ##### [Views](https://github.com/adereksisusanto/codeigniter4-snippets/docs/VIEWS.md)
+- #### Add New Snippets {`[ProjectRoot]/app/Views/**.php`}
 
-<table>
-<thead>
-<tr>
-<th align="center">Command</th>
-<th align="center">Description</th>
-<th align="center">Output</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ci4_routes_add</td>
-<td>Make <b>routes add</b></td>
-<td>
+  <table>
+  <thead>
+    <tr>
+    <th align="center">Command</th>
+    <th align="center">Description</th>
+    <th align="center">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td nowrap>ci4:views:foreach</td>
+    <td>Make <code>foreach</code> in View files</td>
+    <td>
 
-```php
-$routes->add('url', 'ControllerName::index');
-```
+  ```php
+  <?php foreach ($items as $item) : ?>
+    <li><?= $item ?></li>
+  <?php endforeach ?>
+  ```
 
-</td>
-</tr>
-<tr>
-<td>ci4_routes_cli</td>
-<td>Make <b>Command-Line only Routes</b></td>
-<td>
+    </td>
+    </tr>
+    <!--  -->
+    <tr>
+    <td nowrap>ci4:views:if</td>
+    <td>Make <code>if</code> in View files</td>
+    <td>
 
-```php
-$routes->cli('migrate', 'App\Database::migrate');
-```
+  ```php
+  <?php if (condition) : ?>
+    <!-- TRUE -->
+  <?php endif ?>
+  ```
 
-</td>
-</tr>
-<tr>
-<td>ci4_routes_env</td>
-<td>Make <b>routes environment</b></td>
-<td>
+    </td>
+    </tr>
+    <!--  -->
+    <tr>
+    <td nowrap>ci4:views:if-else</td>
+    <td>Make <code>if else</code> in View files</td>
+    <td>
 
-```php
-$routes->environment('development' , function($routes)
-{
-    $routes->add('builder','Tools\Builder::index');
-});
-```
+  ```php
+  <?php if (condition) : ?>
+    <!-- TRUE -->
+  <?php else : ?>
+    <!-- FALSE -->
+  <?php endif ?>
+  ```
 
-</td>
-</tr>
-<tr>
-<td>ci4_routes_get</td>
-<td>Make <b>routes get</b></td>
-<td>
+    </td>
+    </tr>
+    <!--  -->
+    <tr>
+    <td nowrap>ci4:views:if-elseif</td>
+    <td>Make <code>if elseif</code> in View files</td>
+    <td>
 
-```php
-$routes->get('url', 'ControllerName::index');
-```
+  ```php
+  <?php if (condition) : ?>
+    <!-- TRUE -->
+  <?php elseif (condition) : ?>
+    <!-- FALSE -->
+  <?php endif ?>
+  ```
 
-</td>
-</tr>
-<tr>
-<td>ci4_routes_group</td>
-<td>Make <b>routes group</b></td>
-<td>
+    </td>
+    </tr>
+    <!--  -->
+    <tr>
+    <td nowrap>ci4:views:if-elseif-else</td>
+    <td>Make <code>if elseif else</code> in View files</td>
+    <td>
 
-```php
-$routes->group('admin', function($routes)
-{
-    $routes->add('url','ControllerName::index');
-});
-```
+  ```php
+  <?php if (condition) : ?>
+    <!-- TRUE 1 -->
+  <?php elseif (condition) : ?>
+    <!-- TRUE 2 -->
+  <?php else : ?>
+    <!-- FALSE -->
+  <?php endif ?>
+  ```
 
-</td>
-</tr>
-<tr>
-<td>ci4_routes_group_filter</td>
-<td>Make <b>routes group filter</b></td>
-<td>
-
-```php
-$routes->group('api' , ['filter' => 'api-auth'], function($routes)
-{
-    $routes->resource('url');
-});
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_group_multiple</td>
-<td>Make <b>routes group multiple</b></td>
-<td>
-
-```php
-$routes->group('admin', function($routes)
-{
-    $routes->group('users', function($routes)
-    {
-        $routes->add('list','Admin\Users::list');
-    });
-});
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_group_namespace</td>
-<td>Make <b>routes group namespace</b></td>
-<td>
-
-```php
-$routes->group('api' , ['namespace' => 'App\API\v1'], function($routes)
-{
-    $routes->resource('url');
-});
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_post</td>
-<td>Make <b>routes post</b></td>
-<td>
-
-```php
-$routes->post('url', 'ControllerName::index');
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_subdomain</td>
-<td>Make <b>Routes Limit to Subdomains</b></td>
-<td>
-
-```php
-$routes->add('from', 'to', ['subdomain' => '*']);
-```
-
-</td>
-</tr>
-<tr>
-<td>ci4_routes_verbs</td>
-<td>HTTP verbs in routes, HTTP verb (<b>GET, POST, PUT, DELETE, etc</b>)</td>
-<td>
-
-```php
-$routes->get('products', 'Product::feature');
-or
-$routes->post('products', 'Product::feature');
-or
-$routes->put('products/(:num)', 'Product::feature');
-or
-$routes->delete('products/(:num)', 'Product::feature');
-```
-
-</td>
-</tr>
-</tbody>
-</table>
+    </td>
+    </tr>
+  </tbody>
+  </table>
 
 ## License & Download
 
