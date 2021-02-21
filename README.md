@@ -71,7 +71,7 @@ $routes->environment('development' , function($routes)
 <tr>
 <td colspan="3" align="center">
 
-[More..](https://github.com/adereksisusanto/codeigniter4-snippets/docs/ROUTES.md)
+[More..](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/ROUTES.md)
 
 </td>
 </tr>
@@ -132,7 +132,7 @@ $routes->environment('development' , function($routes)
 <tr>
 <td colspan="3" align="center">
 
-[More..](https://github.com/adereksisusanto/codeigniter4-snippets/docs/VIEWS.md)
+[More..](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/VIEWS.md)
 
 </td>
 </tr>
