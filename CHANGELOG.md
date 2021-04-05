@@ -2,7 +2,14 @@
 
 All notable changes to the "codeigniter4-snippets" extension will be documented in this file.
 
-Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.5) for recommendations on how to structure this file.
+Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.6) for recommendations on how to structure this file.
+
+## [Released - 0.0.6] - 2021-04-05
+
+- #### Fixed Bugs Snippets.
+- #### Add New Snippets.
+  - ##### [Controllers](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/CONTROLLERS.md)
+  - ##### [Models](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/MODELS.md)
 
 ## [Released - 0.0.5]
 
@@ -13,7 +20,7 @@ Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippet
 - #### Fixed Bugs.
 - #### Change Command ( [read](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/CHANGE.md) ).
 - #### Add Docs.
-  - ##### [Routes](hhttps://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/ROUTES.md)
+  - ##### [Routes](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/ROUTES.md)
   - ##### [Views](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/VIEWS.md)
 - #### Add New Snippets {`[ProjectRoot]/app/Views/**.php`}
 

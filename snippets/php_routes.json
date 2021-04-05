@@ -36,7 +36,7 @@
     "body": [
       "\\$routes->group('${1:admin}', function(\\$routes)",
       "{",
-      "\t\\${2://Route}",
+      "\t\\${2:route}",
       "});$0"
     ],
     "description": "CodeIgniter 4 - Make Routes group()"

@@ -1,0 +1,49 @@
+{
+  "Codeigniter4_Controller": {
+    "prefix": "ci4:controller",
+    "lang": ["php"],
+    "body": [
+      "public function ${1:index}(${2:\\$request})",
+      "{",
+      "\t${3:code}",
+      "}$0"
+    ],
+    "description": "CodeIgniter 4 - Make Controller"
+  },
+  "Codeigniter4_Controller_Resources": {
+    "prefix": "ci4:controller:resources",
+    "lang": ["php"],
+    "body": [
+      "public function __construct()",
+      "{",
+      "\t\\__construct code",
+      "}",
+      "",
+      "public function index()",
+      "{",
+      "\t\\index code",
+      "}",
+      "",
+      "public function create()",
+      "{",
+      "\t\\create code",
+      "}",
+      "",
+      "public function read(\\$id)",
+      "{",
+      "\t\\read code",
+      "}",
+      "",
+      "public function update(\\$id)",
+      "{",
+      "\t\\update code",
+      "}",
+      "",
+      "public function delete(\\$id)",
+      "{",
+      "\t\\delete code",
+      "}$0"
+    ],
+    "description": "CodeIgniter 4 - Make Controler Resources"
+  }
+}

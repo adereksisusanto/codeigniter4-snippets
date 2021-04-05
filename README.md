@@ -16,6 +16,13 @@ Launch Code's command palette
 ext install adereksisusanto.codeigniter4-snippets
 ```
 
+### Table of Content
+
+- [Controllers](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/CONTROLLERS.md) [new]
+- [Models](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/MODELS.md) [new]
+- [Routes](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/ROUTES.md)
+- [Views](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/Views.md)
+
 ### Alternate Snippets for Routes
 
 ### `[ProjectRoot]/app/Config/Routes.php`
