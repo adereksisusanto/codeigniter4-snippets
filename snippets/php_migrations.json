@@ -1,0 +1,93 @@
+{
+  "Codeigniter4_Migration": {
+    "prefix": "ci4:migration",
+    "lang": ["php"],
+    "body": [
+      "<?php",
+      "",
+      "namespace App\\\\Database\\\\Migrations;",
+      "",
+      "use CodeIgniter\\\\Database\\\\Migration;",
+      "",
+      "class ${1:AddBlog} extends Migration",
+      "{",
+      "\tpublic function up()",
+      "\t{",
+      "\t\t$2",
+      "\t}",
+      "",
+      "\tpublic function down()",
+      "\t{",
+      "\t\t$3",
+      "\t}",
+      "}$0"
+    ],
+    "description": "CodeIgniter 4 - Make Migration"
+  },
+  "Codeigniter4_Migration_Up": {
+    "prefix": "ci4:migration:up",
+    "lang": ["php"],
+    "body": [
+      "public function up()",
+      "{",
+      "\t\\$this->forge->addField([",
+      "\t\t'${1:id}' => [",
+      "\t\t\t'type' => 'INT',",
+      "\t\t\t'constraint' => 11,",
+      "\t\t\t'unsigned' => true,",
+      "\t\t\t'auto_increment' => true,",
+      "\t\t],",
+      "\t\t'${2:name}' => [",
+      "\t\t\t'type' => 'VARCHAR',",
+      "\t\t\t'constraint' => 255,",
+      "\t\t],",
+      "\t\t'created_at' => [",
+      "\t\t\t'type' => 'DATETIME',",
+      "\t\t\t'null' => true,",
+      "\t\t],",
+      "\t\t'updated_at' => [",
+      "\t\t\t'type' => 'DATETIME',",
+      "\t\t\t'null' => true,",
+      "\t\t],",
+      "\t\t'deleted_at' => [",
+      "\t\t\t'type' => 'DATETIME',",
+      "\t\t\t'null' => true,",
+      "\t\t],",
+      "\t]);",
+      "\t\\$this->forge->addKey('${1:id}', true);",
+      "\t\\$this->forge->createTable('${3:tableName}');",
+      "}$0"
+    ],
+    "description": "CodeIgniter 4 - Make Migration Up"
+  },
+  "Codeigniter4_Migration_Down": {
+    "prefix": "ci4:migration:down",
+    "lang": ["php"],
+    "body": [
+      "public function down()",
+      "{",
+      "\t\\$this->forge->dropTable('${1:tableName}');",
+      "}$0"
+    ],
+    "description": "CodeIgniter 4 - Make Migration Down"
+  },
+  "Codeigniter4_Migration_Timestamp": {
+    "prefix": "ci4:migration:timestamp",
+    "lang": ["php"],
+    "body": [
+      "'created_at' => [",
+      "\t'type' => 'DATETIME',",
+      "\t'null' => true,",
+      "],",
+      "'updated_at' => [",
+      "\t'type' => 'DATETIME',",
+      "\t'null' => true,",
+      "],",
+      "'deleted_at' => [",
+      "\t'type' => 'DATETIME',",
+      "\t'null' => true,",
+      "],$0"
+    ],
+    "description": "CodeIgniter 4 - Make Migration Timestamp"
+  }
+}

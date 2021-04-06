@@ -2,7 +2,12 @@
 
 All notable changes to the "codeigniter4-snippets" extension will be documented in this file.
 
-Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.6) for recommendations on how to structure this file.
+Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.7) for recommendations on how to structure this file.
+
+## [Released - 0.0.7] - 2021-04-06
+
+- #### Add New Snippets.
+  - ##### [Migrations](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/MIGRATIONS.md)
 
 ## [Released - 0.0.6] - 2021-04-05
 

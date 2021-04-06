@@ -18,8 +18,9 @@ ext install adereksisusanto.codeigniter4-snippets
 
 ### Table of Content
 
-- [Controllers](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/CONTROLLERS.md) [new]
-- [Models](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/MODELS.md) [new]
+- [Controllers](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/CONTROLLERS.md)
+- [Migrations](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/MIGRATIONS.md) [new]
+- [Models](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/MODELS.md)
 - [Routes](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/ROUTES.md)
 - [Views](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/Views.md)
 
