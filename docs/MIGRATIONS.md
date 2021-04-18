@@ -4,11 +4,18 @@
 
 # Table of Content
 
-- [Create Migration](#create-migration) [new]
-  - [Migration Up](#migration-up) [new]
-  - [Migration Down](#migration-down) [new]
-- [Create Table](#create-table) [new]
-  - [Timestamp](#timestamp) [new]
+- [Create Migration](#create-migration)
+  - [Migration Up](#migration-up)
+  - [Migration Down](#migration-down)
+- [Create Table](#create-table)
+  - [Add Column](#add-column) [new]
+    - [BIGINT](#bigint) [new]
+    - [CHAR](#char) [new]
+    - [DATETIME](#datetime) [new]
+    - [INT](#int) [new]
+    - [VARCHAR](#varchar) [new]
+  - [ID](#id) [new]
+  - [Timestamp](#timestamp)
 
 ## Create Migration
 
@@ -101,6 +108,116 @@ class AddBlog extends Migration
   ```
 
 ## Create Table
+
+- ### Add Column
+
+  - #### BIGINT
+
+    **Command**
+
+    ```bash
+    ci4:migration:bigint
+    ```
+
+    **Output**
+
+    ```php
+    'columnName' => [
+      'type' => 'BIGINT',
+      'constraint' => '20',
+      'null' => true,
+    ],
+    ```
+
+  - #### CHAR
+
+    **Command**
+
+    ```bash
+    ci4:migration:char
+    ```
+
+    **Output**
+
+    ```php
+    'columnName' => [
+      'type' => 'CHAR',
+      'constraint' => '10',
+      'null' => true,
+    ],
+    ```
+
+  - #### DATETIME
+
+    **Command**
+
+    ```bash
+    ci4:migration:datetime
+    ```
+
+    **Output**
+
+    ```php
+    'columnName' => [
+      'type' => 'DATETIME',
+      'null' => true,
+    ],
+    ```
+
+  - #### INT
+
+    **Command**
+
+    ```bash
+    ci4:migration:int
+    ```
+
+    **Output**
+
+    ```php
+    'columnName' => [
+      'type' => 'INT',
+      'constraint' => '11',
+      'null' => true,
+    ],
+    ```
+
+  - #### VARCHAR
+
+    **Command**
+
+    ```bash
+    ci4:migration:varchar
+    ```
+
+    **Output**
+
+    ```php
+    'columnName' => [
+      'type' => 'VARCHAR',
+      'constraint' => '255',
+      'null' => true,
+    ],
+    ```
+
+- ### ID
+
+  **Command :**
+
+  ```bash
+  ci4:migration:id
+  ```
+
+  **Output :**
+
+  ```php
+  'id' => [
+    'type' => 'INT',
+    'constraint' => 11,
+    'unsigned' => true,
+    'auto_increment' => true,
+  ],
+  ```
 
 - ### Timestamp
 
