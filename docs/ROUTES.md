@@ -70,7 +70,7 @@ $routes->get('url', 'ControllerName::index');
 ```php
 $routes->group('admin', function($routes)
 {
-    //Route
+    $routes->add('url', 'ControllerName::index');
 });
 ```
 

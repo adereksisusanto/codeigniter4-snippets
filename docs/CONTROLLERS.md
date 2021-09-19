@@ -4,8 +4,11 @@
 
 ### Table of Content
 
-- [Controllers](#controllers) [new]
-- [Controller Resources](#controller-resources) [new]
+- [Alternate Snippets for Controllers](#alternate-snippets-for-controllers)
+- [`[ProjectRoot]/app/Controllers/*.php`](#projectrootappcontrollersphp)
+- [Table of Content](#table-of-content)
+  - [Controllers](#controllers)
+  - [Controller Resources](#controller-resources)
 
 #### Controllers
 

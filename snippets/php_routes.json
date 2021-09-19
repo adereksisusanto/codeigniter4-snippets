@@ -1,96 +1,96 @@
 {
-  "Codeigniter4_ROUTES_ADD": {
-    "prefix": "ci4:routes:add",
-    "lang": ["php"],
-    "body": ["\\$routes->add('${1:url}','${2:ControllerName}::${3:index}');$0"],
-    "description": "CodeIgniter 4 - Make Routes add()"
-  },
-  "Codeigniter4_ROUTES_CLI": {
-    "prefix": "ci4:routes:cli",
-    "lang": ["php"],
-    "body": [
-      "\\$routes->cli('${1:migrate}','${2:App\\\\Database}::${3:migrate}');$0"
-    ],
-    "description": "CodeIgniter 4 - Make Command-Line only Routes"
-  },
-  "Codeigniter4_ROUTES_ENVIRONMENT": {
-    "prefix": "ci4:routes:env",
-    "lang": ["php"],
-    "body": [
-      "\\$routes->environment('${1:development}', function(\\$routes)",
-      "{",
-      "\t\\$routes->add('${2:builder}','${3:Tools\\\\Builder}::${4:index}');",
-      "});$0"
-    ],
-    "description": "CodeIgniter 4 - Make Routes Environment"
-  },
-  "Codeigniter4_ROUTES_GET": {
-    "prefix": "ci4:routes:get",
-    "lang": ["php"],
-    "body": ["\\$routes->get('${1:url}','${2:ControllerName}::${3:index}');$0"],
-    "description": "CodeIgniter 4 - Make Routes get()"
-  },
-  "Codeigniter4_ROUTES_GROUP": {
-    "prefix": "ci4:routes:group",
-    "lang": ["php"],
-    "body": [
-      "\\$routes->group('${1:admin}', function(\\$routes)",
-      "{",
-      "\t\\${2:route}",
-      "});$0"
-    ],
-    "description": "CodeIgniter 4 - Make Routes group()"
-  },
-  "Codeigniter4_ROUTES_GROUP_FILTER": {
-    "prefix": "ci4:routes:group-filter",
-    "lang": ["php"],
-    "body": [
-      "\\$routes->group('${1:api}',['filter' => '${2:api-auth}'], function(\\$routes)",
-      "{",
-      "\t\\$routes->resource('${3:url}');",
-      "});$0"
-    ],
-    "description": "CodeIgniter 4 - Make Routes group() filter"
-  },
-  "Codeigniter4_ROUTES_GROUP_MULTIPLE": {
-    "prefix": "ci4:routes:group-multiple",
-    "lang": ["php"],
-    "body": [
-      "\\$routes->group('${1:admin}', function(\\$routes)",
-      "{",
-      "\t\\$routes->group('${2:users}', function(\\$routes)",
-      "\t{",
-      "\t\t\\${3://Route}",
-      "\t});",
-      "});$0"
-    ],
-    "description": "CodeIgniter 4 - Make Routes group() multiple"
-  },
-  "Codeigniter4_ROUTES_GROUP_NAMESPACE": {
-    "prefix": "ci4:routes:group-namespace",
-    "lang": ["php"],
-    "body": [
-      "\\$routes->group('${1:api}',['namespace' => '${2:App\\\\API\\\\v1}'], function(\\$routes)",
-      "{",
-      "\t\\${3://Route}",
-      "});$0"
-    ],
-    "description": "CodeIgniter 4 - Make Routes group() namespace"
-  },
-  "Codeigniter4_ROUTES_POST": {
-    "prefix": "ci4:routes:post",
-    "lang": ["php"],
-    "body": [
-      "\\$routes->post('${1:url}','${2:ControllerName}::${3:index}');$0"
-    ],
-    "description": "CodeIgniter 4 - Make Routes post()"
-  },
-  "Codeigniter4_ROUTES_SUBDOMAIN": {
-    "prefix": "ci4:routes:subdomain",
-    "lang": ["php"],
-    "body": [
-      "\\$routes->add('${1:from}', '${2:to}', ['subdomain' => '${2:*}']);$0"
-    ],
-    "description": "CodeIgniter 4 - Make Routes Limit to Subdomains"
-  }
+    "Codeigniter4_ROUTES_ADD": {
+        "prefix": "ci4:routes:add",
+        "lang": ["php"],
+        "body": ["\\$routes->add('${1:url}','${2:ControllerName}::${3:index}');$0"],
+        "description": "CodeIgniter 4 - Make Routes add()"
+    },
+    "Codeigniter4_ROUTES_CLI": {
+        "prefix": "ci4:routes:cli",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->cli('${1:migrate}','${2:App\\\\Database}::${3:migrate}');$0"
+        ],
+        "description": "CodeIgniter 4 - Make Command-Line only Routes"
+    },
+    "Codeigniter4_ROUTES_ENVIRONMENT": {
+        "prefix": "ci4:routes:env",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->environment('${1:development}', function(\\$routes)",
+            "{",
+            "\t\\$routes->add('${2:builder}','${3:Tools\\\\Builder}::${4:index}');",
+            "});$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes Environment"
+    },
+    "Codeigniter4_ROUTES_GET": {
+        "prefix": "ci4:routes:get",
+        "lang": ["php"],
+        "body": ["\\$routes->get('${1:url}','${2:ControllerName}::${3:index}');$0"],
+        "description": "CodeIgniter 4 - Make Routes get()"
+    },
+    "Codeigniter4_ROUTES_GROUP": {
+        "prefix": "ci4:routes:group",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->group('${1:admin}', function(\\$routes)",
+            "{",
+            "\t\\$routes->add('${2:url}','${3:ControllerName}::${4:index}')",
+            "});$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes group()"
+    },
+    "Codeigniter4_ROUTES_GROUP_FILTER": {
+        "prefix": "ci4:routes:group-filter",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->group('${1:api}',['filter' => '${2:api-auth}'], function(\\$routes)",
+            "{",
+            "\t\\$routes->resource('${3:url}');",
+            "});$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes group() filter"
+    },
+    "Codeigniter4_ROUTES_GROUP_MULTIPLE": {
+        "prefix": "ci4:routes:group-multiple",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->group('${1:admin}', function(\\$routes)",
+            "{",
+            "\t\\$routes->group('${2:users}', function(\\$routes)",
+            "\t{",
+            "\t\t\\${3://Route}",
+            "\t});",
+            "});$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes group() multiple"
+    },
+    "Codeigniter4_ROUTES_GROUP_NAMESPACE": {
+        "prefix": "ci4:routes:group-namespace",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->group('${1:api}',['namespace' => '${2:App\\\\API\\\\v1}'], function(\\$routes)",
+            "{",
+            "\t\\${3://Route}",
+            "});$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes group() namespace"
+    },
+    "Codeigniter4_ROUTES_POST": {
+        "prefix": "ci4:routes:post",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->post('${1:url}','${2:ControllerName}::${3:index}');$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes post()"
+    },
+    "Codeigniter4_ROUTES_SUBDOMAIN": {
+        "prefix": "ci4:routes:subdomain",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->add('${1:from}', '${2:to}', ['subdomain' => '${2:*}']);$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes Limit to Subdomains"
+    }
 }

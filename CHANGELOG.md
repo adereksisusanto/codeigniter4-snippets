@@ -2,7 +2,14 @@
 
 All notable changes to the "codeigniter4-snippets" extension will be documented in this file.
 
-Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.8) for recommendations on how to structure this file.
+Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.9) for recommendations on how to structure this file.
+
+## [Released - 0.0.9] - 2021-09-20
+
+- #### Fixed Bugs Snippets.
+- #### Add New Snippets.
+  - ##### [Validations](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/VALIDATIONS.md)
+    - ##### [Validation in Controller](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/VALIDATIONS.md#validation-in-controller)
 
 ## [Released - 0.0.8] - 2021-04-18
 
