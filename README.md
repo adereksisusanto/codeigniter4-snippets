@@ -28,6 +28,11 @@ ext install adereksisusanto.codeigniter4-snippets
 
 Happy coding!
 
+## Donate
+If this project help you reduce time to develop, you can give me a cup of coffee :)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](adereksisusanto@gmail.com) [![Donate](https://img.shields.io/badge/Donate-trakteer.id-red)](https://trakteer.id/adereksisusanto)
+
 ## License & Download
 
 [![GitHub license](https://img.shields.io/github/license/adereksisusanto/codeigniter4-snippets.svg)](https://github.com/adereksisusanto/codeigniter4-snippets) ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/adereksisusanto.codeigniter4-snippets)

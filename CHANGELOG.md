@@ -4,6 +4,11 @@ All notable changes to the "codeigniter4-snippets" extension will be documented 
 
 Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.9) for recommendations on how to structure this file.
 
+## Donate
+If this project help you reduce time to develop, you can give me a cup of coffee :)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](adereksisusanto@gmail.com) [![Donate](https://img.shields.io/badge/Donate-trakteer.id-red)](https://trakteer.id/adereksisusanto)
+
 ## [Released - 0.0.9] - 2021-09-20
 
 - #### Fixed Bugs Snippets.
