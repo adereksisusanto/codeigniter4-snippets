@@ -7,7 +7,7 @@ Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippet
 ## Donate
 If this project help you reduce time to develop, you can give me a cup of coffee :)
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](adereksisusanto@gmail.com) [![Donate](https://img.shields.io/badge/Donate-trakteer.id-red)](https://trakteer.id/adereksisusanto)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/adereksisusanto?locale.x=id_ID) [![Donate](https://img.shields.io/badge/Donate-trakteer.id-red)](https://trakteer.id/adereksisusanto)
 
 ## [Released - 0.0.9] - 2021-09-20
 
