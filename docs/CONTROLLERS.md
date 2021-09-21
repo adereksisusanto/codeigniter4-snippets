@@ -3,63 +3,173 @@
 ### `[ProjectRoot]/app/Controllers/*.php`
 
 ### Table of Content
-
-- [Alternate Snippets for Controllers](#alternate-snippets-for-controllers)
-- [`[ProjectRoot]/app/Controllers/*.php`](#projectrootappcontrollersphp)
-- [Table of Content](#table-of-content)
   - [Controllers](#controllers)
-  - [Controller Resources](#controller-resources)
+    - [Controller Resources](#controller-resources) <sup style="color:red">Update</sup>
+    - [Controller Presenter](#controller-presenter) <sup style="color:red">New</sup>
 
 #### Controllers
 
-- Command
-  ```code
-  ci4:controller
-  ```
-- Output
-  ```php
-  public function index()
-  {
-      // code
-  }
-  ```
+<table style="width:100%">
+<thead>
+<tr>
+<th align="center">COMMANDS</th>
+<th align="center">RENDERS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td nowrap style="vertical-align: top;">
 
-#### Controller Resources
+```code
+ci4:controller
+```
+</td>
+<td nowrap>
 
-- Command
-  ```code
-  ci4:controller:resources
-  ```
-- Output
+```php
+public function index()
+{
+    // code
+}
+```
+</td>
+</tr>
+</tbody>
+</table>
 
-  ```php
-  public function __construct()
-  {
-      // __construct code
-  }
+##### Controller Resources
 
-  public function index()
-  {
-      // index code
-  }
+<table style="width:100%">
+<thead>
+<tr>
+<th align="center">COMMANDS</th>
+<th align="center">RENDERS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td nowrap style="vertical-align: top;">
 
-  public function create()
-  {
-      // create code
-  }
+```code
+ci4:controller:resources
+```
 
-  public function read($id)
-  {
-      // read code
-  }
+</td>
+<td nowrap>
 
-  public function update($id)
-  {
-      // update code
-  }
+```php
+public function __construct()
+{
+    // __construct code
+}
 
-  public function delete($id)
-  {
-      // delete code
-  }
-  ```
+public function index()
+{
+    // index code
+}
+
+public function show($id = null)
+{
+    // show code
+}
+
+public function new()
+{
+    // new code
+}
+
+public function create()
+{
+    // create code
+}
+
+public function edit($id = null)
+{
+    // edit code
+}
+
+public function update($id = null)
+{
+    // update code
+}
+
+public function delete($id = null)
+{
+    // delete code
+}
+```
+</td>
+</tr>
+</tbody>
+</table>
+
+##### Controller Presenter
+
+<table style="width:100%">
+<thead>
+<tr>
+<th align="center">COMMANDS</th>
+<th align="center">RENDERS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td nowrap style="vertical-align: top;">
+
+```code
+ci4:controller:presenter
+```
+
+</td>
+<td nowrap>
+
+```php
+public function __construct()
+{
+    // __construct code
+}
+
+public function index()
+{
+    // index code
+}
+
+public function show($id = null)
+{
+    // show code
+}
+
+public function new()
+{
+    // new code
+}
+
+public function create()
+{
+    // create code
+}
+
+public function edit($id = null)
+{
+    // edit code
+}
+
+public function update($id = null)
+{
+    // update code
+}
+
+public function remove($id = null)
+{
+    // remove code
+}
+
+public function delete($id = null)
+{
+    // delete code
+}
+```
+</td>
+</tr>
+</tbody>
+</table>

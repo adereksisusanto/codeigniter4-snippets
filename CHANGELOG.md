@@ -2,12 +2,25 @@
 
 All notable changes to the "codeigniter4-snippets" extension will be documented in this file.
 
-Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.0.9) for recommendations on how to structure this file.
+Check [Keep a Changelog](https://github.com/adereksisusanto/codeigniter4-snippets/releases/tag/0.1.0) for recommendations on how to structure this file.
 
 ## Donate
 If this project help you reduce time to develop, you can give me a cup of coffee :)
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/adereksisusanto?locale.x=id_ID) [![Donate](https://img.shields.io/badge/Donate-trakteer.id-red)](https://trakteer.id/adereksisusanto)
+
+## [Released - 0.1.0] - 2021-09-21
+
+- #### Fixed Bugs Snippets.
+- #### Update Snippets.
+  - [Controllers](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/CONTROLLERS.md)
+    - [Controller Resources](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/CONTROLLERS.md#controller-resources)
+- #### Add New Snippets.
+  - [Controllers](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/CONTROLLERS.md)
+    - [Controller Presenter](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/CONTROLLERS.md##controller-presenter)
+  - [Routes](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/ROUTES.md)
+    - [Placeholders](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/ROUTES.md#placeholders)
+    - [Custom Placeholders](https://github.com/adereksisusanto/codeigniter4-snippets/blob/main/docs/ROUTES.md#custom-placeholders)
 
 ## [Released - 0.0.9] - 2021-09-20
 

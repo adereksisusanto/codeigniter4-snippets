@@ -36,7 +36,7 @@
         "body": [
             "\\$routes->group('${1:admin}', function(\\$routes)",
             "{",
-            "\t\\$routes->add('${2:url}','${3:ControllerName}::${4:index}')",
+            "\t\\$routes->add('${2:url}','${3:ControllerName}::${4:index};')",
             "});$0"
         ],
         "description": "CodeIgniter 4 - Make Routes group()"
@@ -60,7 +60,7 @@
             "{",
             "\t\\$routes->group('${2:users}', function(\\$routes)",
             "\t{",
-            "\t\t\\${3://Route}",
+            "\t\t\\${3:// Route}",
             "\t});",
             "});$0"
         ],
@@ -76,6 +76,23 @@
             "});$0"
         ],
         "description": "CodeIgniter 4 - Make Routes group() namespace"
+    },
+    "Codeigniter4_ROUTES_PLACEHOLDER": {
+        "prefix": "ci4:routes:placeholder",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->${1|add,get,post,put,delete|}('${2:url}/(:${3|any,segment,num,alpha,alphanum,hash|})','${4:ControllerName}::${5:index}/\\$1');$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes Placeholder (:any) (:segment) (:num) (:alpha) (:alphanum) (:hash)"
+    },
+    "Codeigniter4_ROUTES_PLACEHOLDER_CUSTOM": {
+        "prefix": "ci4:routes:placeholder:custom",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->addPlaceholder('${1:uuid}', '${2:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}}');",
+            "\\$routes->${3|add,get,post,put,delete|}('${4:url}/(:${1:uuid})','${5:ControllerName}::${6:index}/\\$1');$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes Custom Placeholder default (:uuid)"
     },
     "Codeigniter4_ROUTES_POST": {
         "prefix": "ci4:routes:post",
