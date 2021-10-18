@@ -5,7 +5,7 @@
         "body": [
             "public function ${1:index}(${2:\\$request})",
             "{",
-            "\t${3:code}",
+            "\t\\\\${3:code}",
             "}$0"
         ],
         "description": "CodeIgniter 4 - Make Controller"
@@ -16,45 +16,45 @@
         "body": [
             "public function __construct()",
             "{",
-            "\t\\__construct code",
+            "\t\\\\__construct code",
             "}",
             "",
             "public function index()",
             "{",
-            "\t\\index code",
+            "\t\\\\index code",
             "}",
             "",
             "public function show(\\$id = null)",
             "{",
-            "\t\\show code",
+            "\t\\\\show code",
             "}",
             "",
             "public function new()",
             "{",
-            "\t\\new code",
+            "\t\\\\new code",
             "}",
             "",
             "public function create()",
             "{",
-            "\t\\create code",
+            "\t\\\\create code",
             "}",
             "",
             "public function edit(\\$id = null)",
             "{",
-            "\t\\edit code",
+            "\t\\\\edit code",
             "}",
             "",
             "public function update(\\$id = null)",
             "{",
-            "\t\\update code",
+            "\t\\\\update code",
             "}",
             "",
             "public function delete(\\$id = null)",
             "{",
-            "\t\\delete code",
+            "\t\\\\delete code",
             "}$0"
         ],
-        "description": "CodeIgniter 4 - Make Controler Resources"
+        "description": "CodeIgniter 4 - Make Controller Resources"
     },
     "Codeigniter4_Controller_Presenter": {
         "prefix": "ci4:controller:presenter",
@@ -106,5 +106,13 @@
             "}$0"
         ],
         "description": "CodeIgniter 4 - Make Controler Presenter"
+    },
+    "Codeigniter4_Controller_Request": {
+        "prefix": "ci4:controller:request",
+        "lang": ["php"],
+        "body": [
+            "\\$this->request->${1|getVar,getGet,getPost,getMethod,isAjax,isCLI,isSecure|}('${2:field name}');$0"
+        ],
+        "description": "CodeIgniter 4 - Make Controller Request Class"
     }
 }

@@ -102,6 +102,22 @@
         ],
         "description": "CodeIgniter 4 - Make Routes post()"
     },
+    "Codeigniter4_ROUTES_PRESENTER": {
+        "prefix": "ci4:routes:presenter",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->presenter('${1:url}');$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes presenter()"
+    },
+    "Codeigniter4_ROUTES_RESOURCE": {
+        "prefix": "ci4:routes:resource",
+        "lang": ["php"],
+        "body": [
+            "\\$routes->resource('${1:url}');$0"
+        ],
+        "description": "CodeIgniter 4 - Make Routes resource()"
+    },
     "Codeigniter4_ROUTES_SUBDOMAIN": {
         "prefix": "ci4:routes:subdomain",
         "lang": ["php"],

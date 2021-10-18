@@ -6,9 +6,11 @@
 <!-- - [Alternate Snippets for Routes](#alternate-snippets-for-routes)
 - [`[ProjectRoot]/app/Config/Routes.php`](#projectrootappconfigroutesphp)
 - [Table of Content](#table-of-content) -->
-- [Routes](#routes) <sup style="color:red">New</sup>
-  - [Placeholders](#placeholders) <sup style="color:red">New</sup>
-  - [Custom Placeholders](#custom-placeholders) <sup style="color:red">New</sup>
+- [Routes](#routes)
+  - [Placeholders](#placeholders)
+  - [Custom Placeholders](#custom-placeholders)
+  - [Presenter](#presenter)
+  - [Resource](#resource)
 
 ### Routes
 <table style="width:100%">
@@ -259,5 +261,59 @@ $routes->type('url/(:uuid)', 'ControllerName::index/$1');
 </td>
 </tr>
 <!--  -->
+</tbody>
+</table>
+
+#### Presenter
+<table style="width:100%">
+<thead>
+<tr>
+<th align="center">COMMANDS</th>
+<th align="center">RESULTS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td nowrap style="vertical-align: top;">
+
+```code
+ci4:routes:presenter
+```
+
+</td>
+<td nowrap>
+
+```php
+$routes->presenter('url');
+```
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Resource
+<table style="width:100%">
+<thead>
+<tr>
+<th align="center">COMMANDS</th>
+<th align="center">RESULTS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td nowrap style="vertical-align: top;">
+
+```code
+ci4:routes:resource
+```
+
+</td>
+<td nowrap>
+
+```php
+$routes->resource('url');
+```
+</td>
+</tr>
 </tbody>
 </table>
