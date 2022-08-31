@@ -36,7 +36,7 @@
         "body": [
             "\\$routes->group('${1:admin}', function(\\$routes)",
             "{",
-            "\t\\$routes->add('${2:url}','${3:ControllerName}::${4:index};')",
+            "\t\\$routes->add('${2:url}','${3:ControllerName}::${4:index}');",
             "});$0"
         ],
         "description": "CodeIgniter 4 - Make Routes group()"
